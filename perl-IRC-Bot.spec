@@ -17,6 +17,7 @@ BuildRequires:  perl-devel
 BuildRequires:  perl(POE::Component::IRC)
 BuildRequires:  perl(Cache::Cache)
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 A complete bot, similar to eggdrop using POE::Component::IRC. Allows access to
