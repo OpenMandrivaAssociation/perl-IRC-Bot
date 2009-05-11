@@ -1,7 +1,7 @@
 %define module  IRC-Bot
 %define name    perl-%{module}
-%define version 0.06
-%define release %mkrel 5
+%define version 0.08
+%define release %mkrel 1
 
 Name:           %{name}
 Version:        %{version}
@@ -10,7 +10,7 @@ Summary:        Channel Maintenance IRC bot
 License:        GPL or Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/IRC/%{module}-%{version}.tar.bz2
+Source:         http://search.cpan.org/CPAN/authors/id/B/BW/BWSMITH/%{module}-%{version}.tar.gz
 %if %{mdkversion} < 1010
 BuildRequires:  perl-devel
 %endif
