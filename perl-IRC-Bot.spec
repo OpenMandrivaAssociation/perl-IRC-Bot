@@ -2,14 +2,14 @@
 %define upstream_version 0.08
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Channel Maintenance IRC bot
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/B/BW/BWSMITH/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/IRC-Bot
+Source0:	https://cpan.metacpan.org/authors/id/B/BW/BWSMITH/IRC-Bot-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
