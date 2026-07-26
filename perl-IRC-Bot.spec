@@ -1,15 +1,13 @@
 %define upstream_name    IRC-Bot
-%define upstream_version 0.08
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.08
+Release:	6
 
 Summary:	Channel Maintenance IRC bot
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/IRC-Bot
-Source0:	https://cpan.metacpan.org/authors/id/B/BW/BWSMITH/IRC-Bot-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BW/BWSMITH/IRC-Bot-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -24,7 +22,7 @@ system, logging, dcc chat interface, and it runs as a daemon process. IRC::Bot
 utilizes Cache::FileCache for seen functions, and for session handling.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -45,9 +43,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %changelog
 * Tue Jul 28 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.80.0-1mdv2010.0
 + Revision: 402565
-- rebuild using %%perl_convert_version
-
-* Mon May 11 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.08-1mdv2010.0
+- rebuild using %0.08 Mon May 11 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.08-1mdv2010.0
 + Revision: 374539
 - update to 0.08
 
